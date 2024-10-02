@@ -1,27 +1,33 @@
 from setuptools import setup, find_packages
+import os
+
+# Find the correct directory
+this_directory = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(this_directory, '../README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
-    name="blast_embedding",  # The package name
-    version="0.1.0",  # Version number
+    name="blast_embedding",  
+    version="0.1.0",
     description="A BLAST-like algorithm using embeddings for bioinformatics",
-    long_description=open('README.md').read(),
-    long_description_content_type="text/markdown",  # Specifies markdown for the long description
-    author="Alexander Titus",  # Replace with your name
-    author_email="your-email@example.com",  # Replace with your email
-    url="https://github.com/In-Vivo-Group/embedded-blast",  # URL of the project repository
-    packages=find_packages(where="src"),  # Looks for packages inside the `src` directory
-    package_dir={"": "src"},  # Tells setuptools that packages are under `src/`
-    install_requires=[  # Add your package dependencies here
+    long_description=long_description,  # Use the correct path for README.md
+    long_description_content_type="text/markdown",
+    author="Your Name",
+    author_email="your-email@example.com",
+    url="https://github.com/yourusername/embedded-blast",
+    packages=find_packages(where="src"),  
+    package_dir={"": "src"},  
+    install_requires=[
         "numpy",
         "scikit-learn",
         "torch",
         "transformers",
         "biopython",
     ],
-    classifiers=[  # Metadata for your package
+    classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.9',  # Minimum Python version required
+    python_requires='>=3.9',
 )
