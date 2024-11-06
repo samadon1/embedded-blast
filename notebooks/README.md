@@ -1,4 +1,4 @@
-# Reimagining BLAST with Deep Learning: A Modern Approach to Sequence Analysis
+# A Modern BLAST Approach to Sequence Analysis:
 
 ## Introduction
 The Basic Local Alignment Search Tool (BLAST) has been a cornerstone of bioinformatics for decades. But what if we could enhance it with modern deep learning? In this post, I'll share how we built an embedding-based BLAST that combines the best of both worlds: traditional biological knowledge and state-of-the-art machine learning.
@@ -123,23 +123,4 @@ Our tool excels at:
    - Evolution-aware scoring
    - Custom embedding training
 
-## Conclusion
 Our embedding-based BLAST demonstrates how modern deep learning can enhance traditional bioinformatics tools. By combining biological knowledge with neural embeddings, we've created a faster, more flexible sequence analysis tool that maintains biological relevance.
-
-## Try It Yourself
-The code is available on GitHub [link]. Key features:
-- Easy to install and use
-- Comprehensive documentation
-- Example datasets included
-- Visualization tools built-in
-
-## About the Author
-[Your introduction and background in bioinformatics/deep learning]
-
-### Tags
-#Bioinformatics #DeepLearning #SequenceAnalysis #BLAST #MachineLearning #Proteins #ComputationalBiology
-
-Would you like me to:
-1. Add more technical details?
-2. Include specific code examples?
-3. Expand on any particular section?
